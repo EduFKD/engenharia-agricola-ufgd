@@ -12,8 +12,7 @@ export default function FreeUniversity() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800 text-emerald-200 text-sm font-semibold tracking-wide uppercase mb-6">
-              <Banknote className="w-4 h-4" /> Ensino Público e de Qualidade
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800 text-emerald-200 text-sm font-semibold tracking-wide uppercase mb-6"> <Banknote className="w-4 h-4" /> Ensino Público e de Qualidade 
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
               Sua Formação 100% <span className="text-emerald-400">Gratuita</span>
@@ -24,8 +23,7 @@ export default function FreeUniversity() {
 
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-800 flex items-center justify-center text-emerald-300">
-                  <GraduationCap className="w-6 h-6" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-800 flex items-center justify-center text-emerald-300"> <GraduationCap className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-1">Ensino de Excelência</h3>
@@ -36,8 +34,7 @@ export default function FreeUniversity() {
               </div>
               
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-800 flex items-center justify-center text-emerald-300">
-                  <BookOpen className="w-6 h-6" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-800 flex items-center justify-center text-emerald-300"> <BookOpen className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-1">Bolsas e Auxílios</h3>
@@ -48,8 +45,7 @@ export default function FreeUniversity() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-800 flex items-center justify-center text-emerald-300">
-                  <MapPin className="w-6 h-6" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-800 flex items-center justify-center text-emerald-300"> <MapPin className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-1">Localização Privilegiada</h3>
@@ -68,14 +64,8 @@ export default function FreeUniversity() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-emerald-400 rounded-3xl blur-3xl opacity-20 transform -rotate-6 scale-105" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-emerald-700/50">
-              <img 
-                src={import.meta.env.BASE_URL + "free-uni.jpg"} 
-                alt="Estudantes em ambiente universitário" 
-                className="w-full h-auto object-cover aspect-[4/3]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 to-transparent flex items-end p-8">
+              <div className="inset-0 flex items-center justify-center p-8 bg-emerald-800/50 min-h-[300px]">
                 <div className="backdrop-blur-md bg-emerald-900/60 p-6 rounded-2xl border border-emerald-500/30 w-full">
                   <div className="flex items-center justify-between">
                     <div>

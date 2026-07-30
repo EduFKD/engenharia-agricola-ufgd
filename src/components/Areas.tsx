@@ -7,7 +7,7 @@ const areas = [
     title: "Máquinas e Mecanização",
     icon: <Tractor className="w-6 h-6" />,
     desc: "Projetos de tratores, colhedoras e implementos. Agricultura de precisão, drones, GPS e automação de frotas.",
-    image: import.meta.env.BASE_URL + "maquinas.png",
+    image: import.meta.env.BASE_URL + "maquinas.png?v=2",
     color: "from-amber-600 to-amber-700"
   },
   {
@@ -15,7 +15,7 @@ const areas = [
     title: "Engenharia de Água e Solo",
     icon: <Droplets className="w-6 h-6" />,
     desc: "Sistemas de irrigação inteligente, drenagem, gestão de bacias hidrográficas e conservação do solo.",
-    image: import.meta.env.BASE_URL + "irrigacao.png",
+    image: import.meta.env.BASE_URL + "irrigacao.png?v=2",
     color: "from-sky-600 to-sky-700"
   },
   {
@@ -23,7 +23,7 @@ const areas = [
     title: "Construções Rurais e Ambiência",
     icon: <Home className="w-6 h-6" />,
     desc: "Projeto de silos, galpões, estufas e instalações para animais focando em bem-estar e controle térmico.",
-    image: import.meta.env.BASE_URL + "construcao-ambiencia.png",
+    image: import.meta.env.BASE_URL + "construcao-ambiencia.png?v=2",
     color: "from-emerald-600 to-emerald-700"
   },
   {
@@ -31,7 +31,7 @@ const areas = [
     title: "Tecnologia Pós-Colheita",
     icon: <Wheat className="w-6 h-6" />,
     desc: "Processamento, secagem e armazenamento de grãos e produtos agrícolas para garantir a qualidade final.",
-    image: import.meta.env.BASE_URL + "pos-colheita.png",
+    image: import.meta.env.BASE_URL + "pos-colheita.png?v=2",
     color: "from-amber-500 to-amber-600"
   },
   {
@@ -39,7 +39,7 @@ const areas = [
     title: "Energias Renováveis",
     icon: <Zap className="w-6 h-6" />,
     desc: "Eletrificação rural, painéis solares, biodigestores e biomassa aplicada ao setor agropecuário.",
-    image: import.meta.env.BASE_URL + "energia.png",
+    image: import.meta.env.BASE_URL + "energia.png?v=2",
     color: "from-slate-600 to-slate-700"
   }
 ];
@@ -76,12 +76,12 @@ export default function Areas() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`group relative overflow-hidden rounded-xl border border-slate-200 min-h-[350px] lg:${index === 3 ? 'col-span-1 lg:col-start-2' : ''} lg:${index === 4 ? 'col-span-1 lg:col-start-3' : ''}`}
+              className={`group relative overflow-hidden rounded-xl border border-slate-200 aspect-video lg:${index === 3 ? 'col-span-1 lg:col-start-2' : ''} lg:${index === 4 ? 'col-span-1 lg:col-start-3' : ''}`}
               // We'll just let CSS grid auto-place them, but visually 5 items looks good in 3 columns.
               // To center the last two, we can use flex/grid tricks or just standard grid flow.
             >
               <div className="absolute inset-0 z-0">
-                <img src={area.image} alt={area.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={area.image} alt={area.title} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-slate-900/80 group-hover:bg-slate-900/70 transition-colors" />
               </div>
               

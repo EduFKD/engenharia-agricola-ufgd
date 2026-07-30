@@ -3,25 +3,25 @@ import { motion } from 'motion/react';
 const media = [
   {
     type: 'video',
-    src: import.meta.env.BASE_URL + 'analise.mp4',
+    src: import.meta.env.BASE_URL + "analise.mp4?v=2",
     title: 'Atividades de campo e cultivos',
     cols: 'md:col-span-2 md:row-span-2'
   },
   {
     type: 'video',
-    src: import.meta.env.BASE_URL + 'visitas.mp4',
+    src: import.meta.env.BASE_URL + "visitas.mp4?v=2",
     title: 'Visitas técnicas',
     cols: 'md:col-span-1 md:row-span-1'
   },
   {
     type: 'video',
-    src: import.meta.env.BASE_URL + 'mecani.mp4',
+    src: import.meta.env.BASE_URL + "mecani.mp4?v=2",
     title: 'Mecanização agrícola',
     cols: 'md:col-span-1 md:row-span-1'
   },
   {
     type: 'video',
-    src: import.meta.env.BASE_URL + 'irrigaca.mp4',
+    src: import.meta.env.BASE_URL + "irrigaca.mp4?v=2",
     title: 'Sistemas de Irrigação',
     cols: 'md:col-span-2 md:row-span-1'
   }
