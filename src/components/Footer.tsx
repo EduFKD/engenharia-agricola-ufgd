@@ -63,7 +63,7 @@ export default function Footer() {
                 <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center">
                   <Instagram className="w-5 h-5" />
                 </div>
-                <span className="text-sm font-medium">Jeeagri Empresa Júnior</span>
+                <span className="text-sm font-medium">EJEAGRI Empresa Júnior</span>
               </a>
             </div>
             

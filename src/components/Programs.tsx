@@ -10,7 +10,7 @@ const programs = [
   },
   {
     icon: <Award className="w-6 h-6" />,
-    title: "Empresa Júnior (AgroEng)",
+    title: "EJEAGRI - Empresa Júnior",
     desc: "Viva a experiência do mercado de trabalho ainda na graduação. Preste consultorias reais para produtores rurais da região.",
     bg: "bg-emerald-100 text-emerald-700"
   },

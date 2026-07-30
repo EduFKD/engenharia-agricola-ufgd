@@ -7,7 +7,7 @@ const areas = [
     title: "Máquinas e Mecanização",
     icon: <Tractor className="w-6 h-6" />,
     desc: "Projetos de tratores, colhedoras e implementos. Agricultura de precisão, drones, GPS e automação de frotas.",
-    image: "/maquinas.png",
+    image: import.meta.env.BASE_URL + "maquinas.png",
     color: "from-amber-600 to-amber-700"
   },
   {
@@ -15,7 +15,7 @@ const areas = [
     title: "Engenharia de Água e Solo",
     icon: <Droplets className="w-6 h-6" />,
     desc: "Sistemas de irrigação inteligente, drenagem, gestão de bacias hidrográficas e conservação do solo.",
-    image: "/irrigacao.png",
+    image: import.meta.env.BASE_URL + "irrigacao.png",
     color: "from-sky-600 to-sky-700"
   },
   {
@@ -23,7 +23,7 @@ const areas = [
     title: "Construções Rurais e Ambiência",
     icon: <Home className="w-6 h-6" />,
     desc: "Projeto de silos, galpões, estufas e instalações para animais focando em bem-estar e controle térmico.",
-    image: "/construcao-ambiencia.png",
+    image: import.meta.env.BASE_URL + "construcao-ambiencia.png",
     color: "from-emerald-600 to-emerald-700"
   },
   {
@@ -31,7 +31,7 @@ const areas = [
     title: "Tecnologia Pós-Colheita",
     icon: <Wheat className="w-6 h-6" />,
     desc: "Processamento, secagem e armazenamento de grãos e produtos agrícolas para garantir a qualidade final.",
-    image: "/pos-colheita.png",
+    image: import.meta.env.BASE_URL + "pos-colheita.png",
     color: "from-amber-500 to-amber-600"
   },
   {
@@ -39,7 +39,7 @@ const areas = [
     title: "Energias Renováveis",
     icon: <Zap className="w-6 h-6" />,
     desc: "Eletrificação rural, painéis solares, biodigestores e biomassa aplicada ao setor agropecuário.",
-    image: "/energia.png",
+    image: import.meta.env.BASE_URL + "energia.png",
     color: "from-slate-600 to-slate-700"
   }
 ];
