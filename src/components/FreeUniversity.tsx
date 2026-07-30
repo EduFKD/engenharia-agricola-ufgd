@@ -71,7 +71,7 @@ export default function FreeUniversity() {
             <div className="absolute inset-0 bg-emerald-400 rounded-3xl blur-3xl opacity-20 transform -rotate-6 scale-105" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-emerald-700/50">
               <img 
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                src={import.meta.env.BASE_URL + "free-uni.jpg"} 
                 alt="Estudantes em ambiente universitário" 
                 className="w-full h-auto object-cover aspect-[4/3]"
               />
