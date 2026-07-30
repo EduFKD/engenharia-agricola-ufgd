@@ -10,7 +10,7 @@ const programs = [
   },
   {
     icon: <Award className="w-6 h-6" />,
-    title: "EJEAGRI - Empresa Júnior",
+    title: "JEEAGRI - Empresa Júnior",
     desc: "Viva a experiência do mercado de trabalho ainda na graduação. Preste consultorias reais para produtores rurais da região.",
     bg: "bg-emerald-100 text-emerald-700"
   },
@@ -19,6 +19,12 @@ const programs = [
     title: "Projetos de Extensão",
     desc: "Leve o conhecimento da universidade para a comunidade. Transforme a realidade de pequenos agricultores e ganhe experiência social.",
     bg: "bg-amber-100 text-amber-700"
+  },
+  {
+    icon: <Award className="w-6 h-6" />,
+    title: "PET Engenharia Agrícola",
+    desc: "O Programa de Educação Tutorial propicia aos alunos sob a tutoria de um docente, atividades que visam o ensino, pesquisa e extensão.",
+    bg: "bg-indigo-100 text-indigo-700"
   }
 ];
 
@@ -44,7 +50,7 @@ export default function Programs() {
             </button>
           </motion.div>
 
-          <div className="md:w-2/3 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="md:w-2/3 grid sm:grid-cols-2 gap-6">
             {programs.map((prog, i) => (
               <motion.div
                 key={i}

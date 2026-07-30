@@ -1,29 +1,28 @@
 import { motion } from 'motion/react';
-import { PlayCircle } from 'lucide-react';
 
 const media = [
   {
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    type: 'video',
+    src: import.meta.env.BASE_URL + 'analise.mp4',
     title: 'Atividades de campo e cultivos',
     cols: 'md:col-span-2 md:row-span-2'
   },
   {
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    title: 'Análises laboratoriais',
+    type: 'video',
+    src: import.meta.env.BASE_URL + 'visitas.mp4',
+    title: 'Visitas técnicas',
     cols: 'md:col-span-1 md:row-span-1'
   },
   {
     type: 'video',
-    src: 'https://images.unsplash.com/photo-1589923158776-cb4485d99fd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', // Using image as video thumbnail
+    src: import.meta.env.BASE_URL + 'mecani.mp4',
     title: 'Mecanização agrícola',
     cols: 'md:col-span-1 md:row-span-1'
   },
   {
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1586771107445-d3af18b6e62a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    title: 'Sistemas de produção industrial',
+    type: 'video',
+    src: import.meta.env.BASE_URL + 'irrigaca.mp4',
+    title: 'Sistemas de Irrigação',
     cols: 'md:col-span-2 md:row-span-1'
   }
 ];
@@ -62,17 +61,15 @@ export default function Gallery() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`relative group overflow-hidden rounded-xl bg-slate-900 ${item.cols}`}
             >
-              <img 
-                src={item.src} 
-                alt={item.title} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" 
+              <video
+                src={item.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-6">
-                {item.type === 'video' && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <PlayCircle className="w-12 h-12 text-white/80 group-hover:text-amber-400 transition-colors drop-shadow-md" />
-                  </div>
-                )}
                 <h3 className="text-lg font-bold text-white transform translate-y-2 group-hover:translate-y-0 transition-transform">{item.title}</h3>
               </div>
             </motion.div>
