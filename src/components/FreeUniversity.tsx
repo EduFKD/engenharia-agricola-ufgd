@@ -72,7 +72,7 @@ export default function FreeUniversity() {
                       <div className="text-emerald-300 text-sm font-semibold uppercase tracking-wider mb-1">Mensalidade</div>
                       <div className="text-3xl font-black text-white">R$ 0,00</div>
                     </div>
-                    <a href="#vestibular" className="bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-bold px-6 py-3 rounded-full transition-colors">
+                    <a href="https://portal.ufgd.edu.br/vestibular" target="_blank" rel="noreferrer" className="bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-bold px-6 py-3 rounded-full transition-colors">
                       Como ingressar
                     </a>
                   </div>

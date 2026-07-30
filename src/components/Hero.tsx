@@ -51,7 +51,7 @@ export default function Hero() {
           <a href="#areas" className="flex items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors shadow-sm">
             Descubra o Curso
           </a>
-          <a href="#vestibular" className="flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors shadow-sm">
+          <a href="https://portal.ufgd.edu.br/vestibular" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors shadow-sm">
             Inscreva-se no Vestibular <ArrowRight className="w-5 h-5" />
           </a>
         </motion.div>
